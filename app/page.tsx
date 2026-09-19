@@ -1,4 +1,5 @@
 import { ArrowRight, BarChart3, Bell, Clock3, FileText, Search, Star } from "lucide-react";
+import { Show, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 
 const courses = [
@@ -75,7 +76,17 @@ export default function Home() {
           <button className="icon-button notification-button" type="button" aria-label="Notifications">
             <Bell aria-hidden="true" className="icon" />
           </button>
-          <button className="avatar" type="button" aria-label="Open profile">AL</button>
+          <Show when="signed-out">
+            <SignInButton mode="modal">
+              <button className="auth-action auth-action-secondary" type="button">Sign in</button>
+            </SignInButton>
+            <SignUpButton mode="modal">
+              <button className="auth-action auth-action-primary" type="button">Sign up</button>
+            </SignUpButton>
+          </Show>
+          <Show when="signed-in">
+            <UserButton />
+          </Show>
         </div>
       </header>
 

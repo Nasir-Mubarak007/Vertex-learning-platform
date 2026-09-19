@@ -337,6 +337,11 @@ body {
 .icon-button, .avatar { border: 0; cursor: pointer; }
 .icon-button { display: inline-flex; padding: 4px; color: #393a3d; background: transparent; }
 .avatar { width: 34px; height: 34px; border-radius: 50%; color: #6f352b; font-size: 10px; font-weight: 700; background: linear-gradient(145deg, #f3c3a8, #c56e4e 58%, #35221d); box-shadow: inset 0 0 0 2px #fff; }
+.auth-action { border: 0; border-radius: 6px; cursor: pointer; font: inherit; font-size: 12px; padding: 9px 13px; }
+.auth-action-secondary { color: #5d6068; background: transparent; }
+.auth-action-secondary:hover { color: #e96440; }
+.auth-action-primary { color: #fff; background: #ec6b46; }
+.auth-action-primary:hover { background: #df5b36; }
 .icon { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.6; }
 .icon-small { width: 17px; height: 17px; }
 .hero { display: flex; flex-direction: column; align-items: center; padding: 51px 24px 39px; text-align: center; border-bottom: 1px solid #f0e9e3; }
