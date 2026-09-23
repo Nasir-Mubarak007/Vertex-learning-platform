@@ -30,3 +30,9 @@
 
 # Dotenv and similar local-only files
 *.local
+
+# Agent tooling and installed skills
+/.claude
+/.agents
+/agent
+/.kilo
